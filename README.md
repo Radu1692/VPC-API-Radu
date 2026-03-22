@@ -37,4 +37,18 @@ aws cognito-idp sign-up \
   GET /vpcs/{id}
   Returns all created VPCs from DynamoDB.
 
+  -Lambda function-
+  The Lambda function is written in Python using Boto3.
+  Boto3 is the official AWS SDK for Python used to create,configure and manage AWS services .
+  
+  What it does:
+  
+  1.parses the request
+  2.validates input
+  3.calls EC2 APIs:
+    create_vpc
+    create_subnet
+  4.stores data in DynamoDB
+  5.returns structured JSON responses
+
   
