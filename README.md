@@ -36,3 +36,5 @@ aws cognito-idp sign-up \
 
   GET /vpcs/{id}
   Returns all created VPCs from DynamoDB.
+
+  
