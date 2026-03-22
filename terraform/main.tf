@@ -122,13 +122,13 @@ resource "aws_iam_role_policy" "lambda_policy" {
 }
 
 resource "aws_lambda_function" "api" {
-  function_name = "${var.project_name}-api"
-  role          = aws_iam_role.lambda_role.arn
-  handler       = "app.lambda_handler"
-  runtime       = "python3.12"
-  filename      = data.archive_file.lambda_zip.output_path
+  function_name    = "${var.project_name}-api"
+  role             = aws_iam_role.lambda_role.arn
+  handler          = "app.lambda_handler"
+  runtime          = "python3.12"
+  filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
-  timeout       = 60
+  timeout          = 60
 
   environment {
     variables = {
