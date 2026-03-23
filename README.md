@@ -51,4 +51,9 @@ aws cognito-idp sign-up \
   4.stores data in DynamoDB
   5.returns structured JSON responses
 
+
+Architecture
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e20f0bfc-9fd0-4ac0-b778-cb5cb1e9d82e" />
+
   
